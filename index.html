@@ -1,313 +1,407 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NATIVA by Noel | Alimentación Consciente</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-</head>
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<body>
-
+  <body>
     <!-- NAVEGACIÓN -->
     <header class="header">
-        <div class="container header__inner">
-            <a href="#" class="header__logo"><img src="src/logo.svg" alt="NATIVA Logo"></a>
+      <div class="container header__inner">
+        <a href="#" class="header__logo"
+          ><img src="src/logo.svg" alt="NATIVA Logo"
+        /></a>
 
-            <input type="checkbox" id="menu-toggle" class="menu-toggle">
-            <label for="menu-toggle" class="menu-icon">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
 
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li><a href="#inicio" class="nav__link">Inicio</a></li>
-                    <li><a href="#productos" class="nav__link">Productos</a></li>
-                    <li><a href="#sobre-nosotros" class="nav__link">Nosotros</a></li>
-                    <li><a href="#empaque" class="nav__link">Empaque</a></li>
-                    <li><a href="#juego" class="nav__link">Juego</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li><a href="#inicio" class="nav__link">Inicio</a></li>
+            <li><a href="#productos" class="nav__link">Productos</a></li>
+            <li><a href="#sobre-nosotros" class="nav__link">Nosotros</a></li>
+            <li><a href="#empaque" class="nav__link">Empaque</a></li>
+            <li><a href="#juego" class="nav__link">Juego</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <!-- 1. INICIO -->
-    <section id="inicio" class="hero" style="padding: 0; min-height: auto;">
-        <!-- Top Banner -->
-        <div class="hero__banner">
-            <div class="container hero__banner-inner">
-                <div class="hero__banner-content">
-                    <h1 class="hero__quote">"Lo que eliges comer también transforma el mundo"</h1>
-                    <a href="#productos" class="btn btn--white">CONOCE LOS PRODUCTOS</a>
-                </div>
-                <div class="hero__banner-visual">
-                    <img src="src/Recurso.svg" alt="Ilustración NATIVA: Consumo responsable" class="hero__illustration">
-                </div>
-            </div>
+    <section id="inicio" class="hero" style="padding: 0; min-height: auto">
+      <!-- Top Banner -->
+      <div class="hero__banner">
+        <div class="container hero__banner-inner">
+          <div class="hero__banner-content">
+            <h1 class="hero__quote">
+              "Lo que eliges comer también transforma el mundo"
+            </h1>
+            <a href="#productos" class="btn btn--white">CONOCE LOS PRODUCTOS</a>
+          </div>
+          <div class="hero__banner-visual">
+            <img
+              src="src/Recurso.svg"
+              alt="Ilustración NATIVA: Consumo responsable"
+              class="hero__illustration"
+            />
+          </div>
         </div>
+      </div>
 
-        <!-- Bottom Statement -->
-        <div class="hero__statement">
-            <div class="container">
-                <h2 class="hero__statement-title">Pequeñas decisiones, gran impacto.</h2>
+      <!-- Bottom Statement -->
+      <div class="hero__statement">
+        <div class="container">
+          <h2 class="hero__statement-title">
+            Pequeñas decisiones, gran impacto.
+          </h2>
 
-                <div class="hero__icons">
-                    <div class="hero__icon-item">
-                        <div class="icon-circle">
-                            <img src="src/VEGANO.svg" alt="Vegano">
-                        </div>
-                        <p>Vegano</p>
-                    </div>
-                    <div class="hero__icon-item">
-                        <div class="icon-circle">
-                            <img src="src/RECICLADO.svg" alt="Reciclado">
-                        </div>
-                        <p>Reciclado</p>
-                    </div>
-                    <div class="hero__icon-item">
-                        <div class="icon-circle">
-                            <img src="src/ORGANICO.svg" alt="Orgánico">
-                        </div>
-                        <p>Orgánico</p>
-                    </div>
-                </div>
-
-                <p class="hero__statement-text">
-                    NATIVA by Noel es una línea de productos a base de plantas que nace como una evolución responsable
-                    de una marca tradicional.<br>Integra salud, bienestar animal e impacto ambiental en una propuesta
-                    accesible, pensada para quienes quieren empezar a consumir mejor sin cambiarlo todo de un día a
-                    otro.<br><br>
-                </p>
-
-                <a href="#sobre-nosotros" class="btn btn--primary">CONOCE MÁS</a>
+          <div class="hero__icons">
+            <div class="hero__icon-item">
+              <div class="icon-circle">
+                <img src="src/VEGANO.svg" alt="Vegano" />
+              </div>
+              <p>Vegano</p>
             </div>
+            <div class="hero__icon-item">
+              <div class="icon-circle">
+                <img src="src/RECICLADO.svg" alt="Reciclado" />
+              </div>
+              <p>Reciclado</p>
+            </div>
+            <div class="hero__icon-item">
+              <div class="icon-circle">
+                <img src="src/ORGANICO.svg" alt="Orgánico" />
+              </div>
+              <p>Orgánico</p>
+            </div>
+          </div>
+
+          <p class="hero__statement-text">
+            NATIVA by Noel es una línea de productos a base de plantas que nace
+            como una evolución responsable de una marca tradicional.<br />Integra
+            salud, bienestar animal e impacto ambiental en una propuesta
+            accesible, pensada para quienes quieren empezar a consumir mejor sin
+            cambiarlo todo de un día a otro.<br /><br />
+          </p>
+
+          <a href="#sobre-nosotros" class="btn btn--primary">CONOCE MÁS</a>
         </div>
+      </div>
     </section>
 
     <!-- 2. PRODUCTOS -->
     <section id="productos" class="products">
-        <div class="container">
-            <h2>Nuestros Productos</h2>
-            <p class="products__intro">La línea NATIVA está compuesta por productos de origen vegetal que buscan ofrecer
-                alternativas más conscientes sin perder sabor ni experiencia.</p>
+      <div class="container">
+        <h2>Nuestros Productos</h2>
+        <p class="products__intro">
+          La línea NATIVA está compuesta por productos de origen vegetal que
+          buscan ofrecer alternativas más conscientes sin perder sabor ni
+          experiencia.
+        </p>
 
-            <div class="products__grid">
-                <!-- Tarjeta 1 -->
-                <a href="producto.html" class="product-card product-card--chocolate">
-                    <div class="product-card__visual">🍫</div>
-                    <h3 class="product-card__title">Chocolate Oscuro</h3>
-                    <p class="product-card__desc">Intenso y equilibrado</p>
-                </a>
+        <div class="products__grid">
+          <!-- Tarjeta 1 -->
+          <a
+            href="ChocolateOscuro.html"
+            class="product-card product-card--chocolate"
+          >
+            <div class="product-card__visual">🍫</div>
+            <h3 class="product-card__title">Chocolate Oscuro</h3>
+            <p class="product-card__desc">Intenso y equilibrado</p>
+          </a>
 
-                <!-- Tarjeta 2 -->
-                <a href="producto.html" class="product-card product-card--fresa">
-                    <div class="product-card__visual">🍓</div>
-                    <h3 class="product-card__title">Fresa Natural</h3>
-                    <p class="product-card__desc">Suave y fresca</p>
-                </a>
+          <!-- Tarjeta 2 -->
+          <a href="FresaNatural.html" class="product-card product-card--fresa">
+            <div class="product-card__visual">🍓</div>
+            <h3 class="product-card__title">Fresa Natural</h3>
+            <p class="product-card__desc">Suave y fresca</p>
+          </a>
 
-                <!-- Tarjeta 3 -->
-                <a href="producto.html" class="product-card product-card--kiwi">
-                    <div class="product-card__visual">🥝</div>
-                    <h3 class="product-card__title">Kiwi Fresco</h3>
-                    <p class="product-card__desc">Ligero y vibrante</p>
-                </a>
+          <!-- Tarjeta 3 -->
+          <a href="KiwiFresco.html" class="product-card product-card--kiwi">
+            <div class="product-card__visual">🥝</div>
+            <h3 class="product-card__title">Kiwi Fresco</h3>
+            <p class="product-card__desc">Refrescante y diferente</p>
+          </a>
 
-                <!-- Tarjeta 4 -->
-                <a href="producto.html" class="product-card product-card--arandanos">
-                    <div class="product-card__visual">🫐</div>
-                    <h3 class="product-card__title">Arándanos Silvestres</h3>
-                    <p class="product-card__desc">Delicado y natural</p>
-                </a>
-            </div>
+          <!-- Tarjeta 4 -->
+          <a
+            href="ArandanosSilvestres.html"
+            class="product-card product-card--arandanos"
+          >
+            <div class="product-card__visual">🫐</div>
+            <h3 class="product-card__title">Arándanos Silvestres</h3>
+            <p class="product-card__desc">Delicado y equilibrado</p>
+          </a>
         </div>
+      </div>
     </section>
 
     <!-- 4. SOBRE NOSOTROS -->
     <section id="sobre-nosotros" class="about">
-        <div class="container">
-            <h2>Cambiar la perspectiva</h2>
-            <div class="about__grid">
-                <div class="about__visual">
-                    <div class="about__image-wrapper">
-                        <div class="about__image-placeholder">
-                            <span>Fotografía de Origen (Ej: 🍃 Naturaleza)</span>
-                        </div>
-                    </div>
-                    <div class="about__context-box">
-                        <p class="about__context">El modelo actual de consumo masivo se basa en la producción a gran
-                            escala, lo que ha generado impactos ambientales importantes, como el uso excesivo de
-                            plásticos y la baja visibilidad del origen de los productos.</p>
-                    </div>
-                </div>
-                <div class="about__info">
-                    <p><strong>NATIVA</strong> surge como una respuesta a esta problemática, proponiendo una forma
-                        diferente de consumir, donde cada decisión se toma de manera más consciente.</p>
-
-                    <div class="about__focus-list">
-                        <div class="focus-item">
-                            <div class="focus-item__icon">🌱</div>
-                            <h4 class="focus-item__text">Bienestar personal (alimentación vegetal)</h4>
-                        </div>
-                        <div class="focus-item">
-                            <div class="focus-item__icon">🐾</div>
-                            <h4 class="focus-item__text">Bienestar animal</h4>
-                        </div>
-                        <div class="focus-item">
-                            <div class="focus-item__icon">🌍</div>
-                            <h4 class="focus-item__text">Reducción del impacto ambiental</h4>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <h2>Cambiar la perspectiva</h2>
+        <div class="about__grid">
+          <div class="about__visual">
+            <div class="about__image-wrapper">
+              <div class="about__image-placeholder">
+                <span>Fotografía de Origen (Ej: 🍃 Naturaleza)</span>
+              </div>
             </div>
+            <div class="about__context-box">
+              <p class="about__context">
+                El modelo actual de consumo masivo se basa en la producción a
+                gran escala, lo que ha generado impactos ambientales
+                importantes, como el uso excesivo de plásticos y la baja
+                visibilidad del origen de los productos.
+              </p>
+            </div>
+          </div>
+          <div class="about__info">
+            <p>
+              <strong>NATIVA</strong> surge como una respuesta a esta
+              problemática, proponiendo una forma diferente de consumir, donde
+              cada decisión se toma de manera más consciente.
+            </p>
+
+            <div class="about__focus-list">
+              <div class="focus-item">
+                <div class="focus-item__icon">🌱</div>
+                <h4 class="focus-item__text">
+                  Bienestar personal (alimentación vegetal)
+                </h4>
+              </div>
+              <div class="focus-item">
+                <div class="focus-item__icon">🐾</div>
+                <h4 class="focus-item__text">Bienestar animal</h4>
+              </div>
+              <div class="focus-item">
+                <div class="focus-item__icon">🌍</div>
+                <h4 class="focus-item__text">
+                  Reducción del impacto ambiental
+                </h4>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- 5. KIT & EMPAQUE -->
     <section id="empaque" class="packaging">
-        <div class="container">
-            <div class="packaging__image-wrapper">
-                <div class="packaging__hexagon">Forma Hexagonal Optimizada</div>
-            </div>
-
-            <div class="packaging__content">
-                <h2>Diseño que respeta el entorno</h2>
-                <p>Los empaques NATIVA están diseñados bajo criterios de sostenibilidad, buscando reducir el impacto
-                    ambiental desde el diseño. La forma hexagonal optimiza el uso del material y se inspira en
-                    estructuras naturales.</p>
-
-                <div class="packaging__list">
-                    <div class="packaging__list-item">Uso de cartón reciclado o certificado</div>
-                    <div class="packaging__list-item">Tintas a base de agua</div>
-                    <div class="packaging__list-item">Eliminación de laminados plásticos</div>
-                    <div class="packaging__list-item">Estructuras monomaterial para reciclar</div>
-                </div>
-
-                <div class="kit-box">
-                    <h3>El Kit NATIVA</h3>
-                    <p>El kit transforma el empaque en una experiencia. Incluye: Producto, Animal armable, Tablero de
-                        juego, y un Mensaje de conciencia. El objetivo no es solo contener el producto, sino generar
-                        interacción, aprendizaje y reflexión en el usuario.</p>
-                </div>
-            </div>
+      <div class="container">
+        <div class="packaging__image-wrapper">
+          <div class="packaging__hexagon">Forma Hexagonal Optimizada</div>
         </div>
+
+        <div class="packaging__content">
+          <h2>Diseño que respeta el entorno</h2>
+          <p>
+            Los empaques NATIVA están diseñados bajo criterios de
+            sostenibilidad, buscando reducir el impacto ambiental desde el
+            diseño. La forma hexagonal optimiza el uso del material y se inspira
+            en estructuras naturales.
+          </p>
+
+          <div class="packaging__list">
+            <div class="packaging__list-item">
+              Uso de cartón reciclado o certificado
+            </div>
+            <div class="packaging__list-item">Tintas a base de agua</div>
+            <div class="packaging__list-item">
+              Eliminación de laminados plásticos
+            </div>
+            <div class="packaging__list-item">
+              Estructuras monomaterial para reciclar
+            </div>
+          </div>
+
+          <div class="kit-box">
+            <h3>El Kit NATIVA</h3>
+            <p>
+              El kit transforma el empaque en una experiencia. Incluye:
+              Producto, Animal armable, Tablero de juego, y un Mensaje de
+              conciencia. El objetivo no es solo contener el producto, sino
+              generar interacción, aprendizaje y reflexión en el usuario.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- 6. JUEGO -->
     <section id="juego" class="game">
-        <div class="container">
-            <h2>El Juego NATIVA</h2>
-            <p class="game__intro">Una experiencia interactiva donde los jugadores toman decisiones que reflejan
-                acciones de la vida cotidiana. Cada decisión tiene una consecuencia dentro del juego, permitiendo
-                entender de forma simple el impacto de lo que consumimos.</p>
+      <div class="container">
+        <h2>El Juego NATIVA</h2>
+        <p class="game__intro">
+          Una experiencia interactiva donde los jugadores toman decisiones que
+          reflejan acciones de la vida cotidiana. Cada decisión tiene una
+          consecuencia dentro del juego, permitiendo entender de forma simple el
+          impacto de lo que consumimos.
+        </p>
 
-            <div class="game__layout">
-                <div class="game__rules-box">
-                    <h3>¿Cómo se juega?</h3>
-                    <p><strong>Objetivo:</strong> Ser el primero en llegar al final del tablero tomando decisiones más
-                        conscientes a lo largo del recorrido.</p>
-                    <div class="game__steps">
-                        <div class="game__step"><span>Cada jugador elige una ficha (animal armable).</span></div>
-                        <div class="game__step"><span>Todos comienzan en la casilla de salida del tablero incluido en el
-                                kit.</span></div>
-                        <div class="game__step"><span>Por turnos lanzan el dado y avanzan.</span></div>
-                        <div class="game__step"><span>Al caer en una casilla, deben seguir la instrucción.</span></div>
-                        <div class="game__step"><span>El juego termina cuando un jugador llega al final.</span></div>
-                    </div>
-                </div>
-
-                <div class="game__cards-grid">
-                    <div class="card-type card-type--positive">
-                        <h4>Casillas Positivas</h4>
-                        <p>Decisiones conscientes<br><strong>→ Avanzar casillas</strong></p>
-                    </div>
-                    <div class="card-type card-type--negative">
-                        <h4>Casillas Negativas</h4>
-                        <p>Decisiones con impacto negativo<br><strong>→ Retroceder casillas</strong></p>
-                    </div>
-                    <div class="card-type card-type--question">
-                        <h4>Pregunta</h4>
-                        <p>Otro lee la carta.<br><strong>Bien = Avanza / Mal = Retrocede</strong></p>
-                    </div>
-                    <div class="card-type card-type--challenge">
-                        <h4>Reto</h4>
-                        <p>Dibujar o representar idea.<br><strong>Entendido = Avanza / No = Se queda</strong></p>
-                    </div>
-                </div>
+        <div class="game__layout">
+          <div class="game__rules-box">
+            <h3>¿Cómo se juega?</h3>
+            <p>
+              <strong>Objetivo:</strong> Ser el primero en llegar al final del
+              tablero tomando decisiones más conscientes a lo largo del
+              recorrido.
+            </p>
+            <div class="game__steps">
+              <div class="game__step">
+                <span>Cada jugador elige una ficha (animal armable).</span>
+              </div>
+              <div class="game__step">
+                <span
+                  >Todos comienzan en la casilla de salida del tablero incluido
+                  en el kit.</span
+                >
+              </div>
+              <div class="game__step">
+                <span>Por turnos lanzan el dado y avanzan.</span>
+              </div>
+              <div class="game__step">
+                <span
+                  >Al caer en una casilla, deben seguir la instrucción.</span
+                >
+              </div>
+              <div class="game__step">
+                <span>El juego termina cuando un jugador llega al final.</span>
+              </div>
             </div>
+          </div>
 
-            <div class="game__digital">
-                <div class="game__digital-content">
-                    <h3>Cartas Digitales</h3>
-                    <p>Las cartas no están impresas físicamente. Se accede a ellas mediante un código QR presente en el
-                        empaque o el kit. Esto permite mantener el tablero limpio, reducir el uso de papel y ampliar la
-                        experiencia digital.</p>
-
-                    <div class="game__important-note">
-                        <p>Nota importante: Las cartas digitales solo muestran la información. No requieren interacción
-                            compleja. El juego ocurre físicamente.</p>
-                    </div>
-                </div>
-                <div class="qr-placeholder">
-                    <div class="qr-dots">
-                        <span></span><span></span><span></span>
-                        <span></span><span></span><span></span>
-                        <span></span><span></span><span></span>
-                    </div>
-                    <p style="color:var(--color-primary); font-size:0.8rem; font-weight:800; margin:0;">ESCANEAR</p>
-                </div>
+          <div class="game__cards-grid">
+            <div class="card-type card-type--positive">
+              <h4>Casillas Positivas</h4>
+              <p>
+                Decisiones conscientes<br /><strong>→ Avanzar casillas</strong>
+              </p>
             </div>
+            <div class="card-type card-type--negative">
+              <h4>Casillas Negativas</h4>
+              <p>
+                Decisiones con impacto negativo<br /><strong
+                  >→ Retroceder casillas</strong
+                >
+              </p>
+            </div>
+            <div class="card-type card-type--question">
+              <h4>Pregunta</h4>
+              <p>
+                Otro lee la carta.<br /><strong
+                  >Bien = Avanza / Mal = Retrocede</strong
+                >
+              </p>
+            </div>
+            <div class="card-type card-type--challenge">
+              <h4>Reto</h4>
+              <p>
+                Dibujar o representar idea.<br /><strong
+                  >Entendido = Avanza / No = Se queda</strong
+                >
+              </p>
+            </div>
+          </div>
         </div>
+
+        <div class="game__digital">
+          <div class="game__digital-content">
+            <h3>Cartas Digitales</h3>
+            <p>
+              Las cartas no están impresas físicamente. Se accede a ellas
+              mediante un código QR presente en el empaque o el kit. Esto
+              permite mantener el tablero limpio, reducir el uso de papel y
+              ampliar la experiencia digital.
+            </p>
+
+            <div class="game__important-note">
+              <p>
+                Nota importante: Las cartas digitales solo muestran la
+                información. No requieren interacción compleja. El juego ocurre
+                físicamente.
+              </p>
+            </div>
+          </div>
+          <div class="qr-placeholder">
+            <div class="qr-dots">
+              <span></span><span></span><span></span> <span></span><span></span
+              ><span></span> <span></span><span></span><span></span>
+            </div>
+            <p
+              style="
+                color: var(--color-primary);
+                font-size: 0.8rem;
+                font-weight: 800;
+                margin: 0;
+              "
+            >
+              ESCANEAR
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- FOOTER -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer__grid">
-                <div class="footer__brand">
-                    <div class="footer__logo"><img src="src/logo.svg" alt="NATIVA Logo"></div>
-                    <p class="footer__tagline">Pequeñas decisiones, gran impacto. Una línea sostenible enfocada en el
-                        bienestar.</p>
-                </div>
-
-                <div class="footer__links">
-                    <h4 class="footer__heading">Explora</h4>
-                    <ul>
-                        <li><a href="#inicio">Inicio</a></li>
-                        <li><a href="#productos">Productos</a></li>
-                        <li><a href="#sobre-nosotros">Nosotros</a></li>
-                        <li><a href="#empaque">Empaque</a></li>
-                        <li><a href="#juego">Juego</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer__socials">
-                    <h4 class="footer__heading">Comunidad</h4>
-                    <ul>
-                        <li><a href="#">Instagram</a></li>
-                        <li><a href="#">TikTok</a></li>
-                        <li><a href="#">Contáctanos</a></li>
-                    </ul>
-                </div>
+      <div class="container">
+        <div class="footer__grid">
+          <div class="footer__brand">
+            <div class="footer__logo">
+              <img src="src/logo.svg" alt="NATIVA Logo" />
             </div>
+            <p class="footer__tagline">
+              Pequeñas decisiones, gran impacto. Una línea sostenible enfocada
+              en el bienestar.
+            </p>
+          </div>
 
-            <div class="footer__bottom">
-                <p class="footer__copyright">© 2026 NATIVA by Noel. Todos los derechos reservados.</p>
-                <div class="footer__legal">
-                    <a href="#">Aviso Legal</a> &nbsp;|&nbsp; <a href="#">Política de Privacidad</a>
-                </div>
-            </div>
+          <div class="footer__links">
+            <h4 class="footer__heading">Explora</h4>
+            <ul>
+              <li><a href="#inicio">Inicio</a></li>
+              <li><a href="#productos">Productos</a></li>
+              <li><a href="#sobre-nosotros">Nosotros</a></li>
+              <li><a href="#empaque">Empaque</a></li>
+              <li><a href="#juego">Juego</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__socials">
+            <h4 class="footer__heading">Comunidad</h4>
+            <ul>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">TikTok</a></li>
+              <li><a href="#">Contáctanos</a></li>
+            </ul>
+          </div>
         </div>
+
+        <div class="footer__bottom">
+          <p class="footer__copyright">
+            © 2026 NATIVA by Noel. Todos los derechos reservados.
+          </p>
+          <div class="footer__legal">
+            <a href="#">Aviso Legal</a> &nbsp;|&nbsp;
+            <a href="#">Política de Privacidad</a>
+          </div>
+        </div>
+      </div>
     </footer>
-
-</body>
-
+  </body>
 </html>
