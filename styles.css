@@ -615,15 +615,15 @@ section {
 }
 
 .focus-item__icon {
-  width: 50px;
-  height: 50px;
+  width: 64px;
+  height: 64px;
   background-color: var(--color-secondary-3);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--color-primary);
-  font-size: 1.5rem;
+  flex-shrink: 0;
+  padding: 12px;
 }
 
 .focus-item__text {
