@@ -21,19 +21,19 @@
           ><img src="src/logo.svg" alt="NATIVA Logo"
         /></a>
 
-        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
-        <label for="menu-toggle" class="menu-icon">
+        <button id="menu-toggle" class="menu-icon" aria-label="Abrir menú">
           <span></span>
           <span></span>
           <span></span>
-        </label>
+        </button>
 
         <nav class="nav">
           <ul class="nav__list">
             <li><a href="#inicio" class="nav__link">Inicio</a></li>
-            <li><a href="#productos" class="nav__link">Productos</a></li>
             <li><a href="#sobre-nosotros" class="nav__link">Nosotros</a></li>
+            <li><a href="#productos" class="nav__link">Productos</a></li>
             <li><a href="#empaque" class="nav__link">Empaque</a></li>
+            <li><a href="#personajes" class="nav__link">Personajes</a></li>
             <li><a href="#juego" class="nav__link">Juego</a></li>
           </ul>
         </nav>
@@ -102,54 +102,6 @@
       </div>
     </section>
 
-    <!-- 2. PRODUCTOS -->
-    <section id="productos" class="products">
-      <div class="container">
-        <h2>Nuestros Productos</h2>
-        <p class="products__intro">
-          La línea NATIVA está compuesta por productos de origen vegetal que
-          buscan ofrecer alternativas más conscientes sin perder sabor ni
-          experiencia.
-        </p>
-
-        <div class="products__grid">
-          <!-- Tarjeta 1 -->
-          <a
-            href="ChocolateOscuro.html"
-            class="product-card product-card--chocolate"
-          >
-            <div class="product-card__visual">🍫</div>
-            <h3 class="product-card__title">Chocolate Oscuro</h3>
-            <p class="product-card__desc">Intenso y equilibrado</p>
-          </a>
-
-          <!-- Tarjeta 2 -->
-          <a href="FresaNatural.html" class="product-card product-card--fresa">
-            <div class="product-card__visual">🍓</div>
-            <h3 class="product-card__title">Fresa Natural</h3>
-            <p class="product-card__desc">Suave y fresca</p>
-          </a>
-
-          <!-- Tarjeta 3 -->
-          <a href="KiwiFresco.html" class="product-card product-card--kiwi">
-            <div class="product-card__visual">🥝</div>
-            <h3 class="product-card__title">Kiwi Fresco</h3>
-            <p class="product-card__desc">Refrescante y diferente</p>
-          </a>
-
-          <!-- Tarjeta 4 -->
-          <a
-            href="ArandanosSilvestres.html"
-            class="product-card product-card--arandanos"
-          >
-            <div class="product-card__visual">🫐</div>
-            <h3 class="product-card__title">Arándanos Silvestres</h3>
-            <p class="product-card__desc">Delicado y equilibrado</p>
-          </a>
-        </div>
-      </div>
-    </section>
-
     <!-- 4. SOBRE NOSOTROS -->
     <section id="sobre-nosotros" class="about">
       <div class="container">
@@ -200,6 +152,54 @@
       </div>
     </section>
 
+    <!-- 2. PRODUCTOS -->
+    <section id="productos" class="products">
+      <div class="container">
+        <h2>Nuestros Productos</h2>
+        <p class="products__intro">
+          La línea NATIVA está compuesta por productos de origen vegetal que
+          buscan ofrecer alternativas más conscientes sin perder sabor ni
+          experiencia.
+        </p>
+
+        <div class="products__grid">
+          <!-- Tarjeta 1 -->
+          <a
+            href="ChocolateOscuro.html"
+            class="product-card product-card--chocolate"
+          >
+            <div class="product-card__visual">🍫</div>
+            <h3 class="product-card__title">Chocolate Oscuro</h3>
+            <p class="product-card__desc">Intenso y equilibrado</p>
+          </a>
+
+          <!-- Tarjeta 2 -->
+          <a href="FresaNatural.html" class="product-card product-card--fresa">
+            <div class="product-card__visual">🍓</div>
+            <h3 class="product-card__title">Fresa Natural</h3>
+            <p class="product-card__desc">Suave y fresca</p>
+          </a>
+
+          <!-- Tarjeta 3 -->
+          <a href="KiwiFresco.html" class="product-card product-card--kiwi">
+            <div class="product-card__visual">🥝</div>
+            <h3 class="product-card__title">Kiwi Fresco</h3>
+            <p class="product-card__desc">Refrescante y diferente</p>
+          </a>
+
+          <!-- Tarjeta 4 -->
+          <a
+            href="ArandanosSilvestres.html"
+            class="product-card product-card--arandanos"
+          >
+            <div class="product-card__visual">🫐</div>
+            <h3 class="product-card__title">Arándanos Silvestres</h3>
+            <p class="product-card__desc">Delicado y equilibrado</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
     <!-- 5. KIT & EMPAQUE -->
     <section id="empaque" class="packaging">
       <div class="container">
@@ -236,6 +236,69 @@
               Producto, Animal armable, Tablero de juego, y un Mensaje de
               conciencia. El objetivo no es solo contener el producto, sino
               generar interacción, aprendizaje y reflexión en el usuario.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. PERSONAJES -->
+    <section id="personajes" class="characters">
+      <div class="container">
+        <h2>Personajes</h2>
+        <p class="characters__intro">
+          Estos personajes no son solo parte del juego.<br />
+          Son una representación de las vidas que se ven afectadas por nuestras
+          decisiones diarias. Muchas veces consumimos sin pensar en lo que hay
+          detrás. Aquí, la idea es detenerse un momento y mirar más allá.
+        </p>
+
+        <div class="characters__grid">
+          <!-- Personaje Luma -->
+          <div class="character-card character-card--luma">
+            <div class="character-card__visual">
+              <img src="src/P_VAQUITA.png" alt="Luma la vaca" />
+            </div>
+            <h3 class="character-card__title">Luma</h3>
+            <p class="character-card__desc">
+              Su vida hace parte de muchos productos que consumimos a diario.<br /><br />
+              A veces, cambiar también es una forma de cuidar.
+            </p>
+          </div>
+
+          <!-- Personaje Mía -->
+          <div class="character-card character-card--mia">
+            <div class="character-card__visual">
+              <img src="src/P_GALLINITA.png" alt="Mía la gallina" />
+            </div>
+            <h3 class="character-card__title">Mía</h3>
+            <p class="character-card__desc">
+              Está más presente en tu día a día de lo que imaginas.<br /><br />
+              Reconocerlo es el primer paso para decidir distinto.
+            </p>
+          </div>
+
+          <!-- Personaje Nela -->
+          <div class="character-card character-card--nela">
+            <div class="character-card__visual">
+              <img src="src/P_ABEJITA.png" alt="Nela la abeja" />
+            </div>
+            <h3 class="character-card__title">Nela</h3>
+            <p class="character-card__desc">
+              Su trabajo sostiene gran parte de lo que comemos.<br /><br />
+              Sin ella, el equilibrio se rompe.
+            </p>
+          </div>
+
+          <!-- Personaje Río -->
+          <div class="character-card character-card--rio">
+            <div class="character-card__visual">
+              <img src="src/P_PECECITO.png" alt="Río el pez" />
+            </div>
+            <h3 class="character-card__title">Río</h3>
+            <p class="character-card__desc">
+              Vive en entornos que reflejan nuestras acciones.<br /><br />
+              Lo que desechamos siempre llega a algún lugar.
             </p>
           </div>
         </div>
@@ -375,9 +438,10 @@
             <h4 class="footer__heading">Explora</h4>
             <ul>
               <li><a href="#inicio">Inicio</a></li>
-              <li><a href="#productos">Productos</a></li>
               <li><a href="#sobre-nosotros">Nosotros</a></li>
+              <li><a href="#productos">Productos</a></li>
               <li><a href="#empaque">Empaque</a></li>
+              <li><a href="#personajes">Personajes</a></li>
               <li><a href="#juego">Juego</a></li>
             </ul>
           </div>
@@ -403,5 +467,6 @@
         </div>
       </div>
     </footer>
+    <script src="main.js"></script>
   </body>
 </html>

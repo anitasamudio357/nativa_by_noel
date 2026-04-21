@@ -4,22 +4,22 @@
 
 :root {
   /* Colors */
-  --color-primary: #699AA6;
+  --color-primary: #699aa6;
   --color-bg: #f8f6f0;
   /* Derivado muy claro de off-white/crema */
-  --color-secondary-1: #F8E8B3;
+  --color-secondary-1: #f8e8b3;
   /* Amarillo/Beige suave */
-  --color-secondary-2: #DBE0BC;
+  --color-secondary-2: #dbe0bc;
   /* Verde olivo muy claro */
-  --color-secondary-3: #CEDDD8;
+  --color-secondary-3: #ceddd8;
   /* Gris verdoso claro */
 
   --color-text: #334247;
-  --color-text-light: #5A6D74;
+  --color-text-light: #5a6d74;
   --color-white: #ffffff;
 
   /* Typography */
-  --font-primary: 'Nunito', sans-serif;
+  --font-primary: "Nunito", sans-serif;
 
   /* Radii */
   --border-radius-pill: 50px;
@@ -195,9 +195,6 @@ section {
   position: relative;
 }
 
-.menu-toggle {
-  display: none;
-}
 
 .menu-icon {
   display: none;
@@ -226,6 +223,8 @@ section {
 .header__logo {
   display: flex;
   align-items: center;
+  position: relative;
+  z-index: 1002; /* Ensure logo sits above mobile nav overlay */
 }
 
 .header__logo img {
@@ -251,7 +250,7 @@ section {
 }
 
 .nav__link::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 0;
   height: 2px;
@@ -464,6 +463,93 @@ section {
 }
 
 /* ==========================================================================
+   PERSONAJES SECTION
+   ========================================================================== */
+.characters {
+  background-color: var(--color-bg);
+  padding: var(--spacing-xxl) 0;
+  text-align: center;
+}
+
+.characters__intro {
+  max-width: 800px;
+  margin: 0 auto var(--spacing-xl);
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: var(--color-text-light);
+  font-weight: 500;
+}
+
+.characters__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-xl);
+}
+
+.character-card {
+  background: var(--color-white);
+  border-radius: var(--border-radius-card);
+  padding: var(--spacing-xl) var(--spacing-md);
+  text-align: center;
+  transition: all 0.4s ease;
+  border: 1px solid rgba(105, 154, 166, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.character-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(105, 154, 166, 0.15);
+}
+
+.character-card__visual {
+  width: 140px;
+  height: 140px;
+  border-radius: 20px; /* Cuadrado con bordes redondeados */
+  margin: 0 auto var(--spacing-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.character-card__visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.character-card--luma .character-card__visual {
+  background-color: #fce4ec;
+}
+
+.character-card--mia .character-card__visual {
+  background-color: #fff3e0;
+}
+
+.character-card--nela .character-card__visual {
+  background-color: #fff8e1;
+}
+
+.character-card--rio .character-card__visual {
+  background-color: #e3f2fd;
+}
+
+.character-card__title {
+  color: var(--color-primary);
+  font-size: 1.4rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+.character-card__desc {
+  font-size: 1rem;
+  color: var(--color-text-light);
+  line-height: 1.6;
+}
+
+/* ==========================================================================
    SOBRE NOSOTROS SECTION
    ========================================================================== */
 .about {
@@ -512,9 +598,8 @@ section {
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
 }
 
-
 .about__context-box::before {
-  content: '“';
+  content: "“";
   font-size: 6rem;
   color: rgba(255, 255, 255, 0.5);
   position: absolute;
@@ -630,7 +715,7 @@ section {
 }
 
 .packaging__list-item::before {
-  content: '✓';
+  content: "✓";
   color: var(--color-primary);
   font-weight: 800;
 }
@@ -809,7 +894,7 @@ section {
    FOOTER
    ========================================================================== */
 .footer {
-  background-color: #699AA6;
+  background-color: #699aa6;
   color: var(--color-white);
   padding: var(--spacing-lg) 0 var(--spacing-sm);
 }
@@ -960,7 +1045,6 @@ section {
    RESPONSIVE DESIGN (MOBILE ADAPTATIONS)
    ========================================================================== */
 @media (max-width: 992px) {
-
   .hero__inner,
   .about__grid,
   .packaging .container,
@@ -1039,16 +1123,16 @@ section {
 
   .nav {
     position: fixed;
-    top: 70px;
+    top: 0;
     left: 0;
     width: 100%;
-    padding: var(--spacing-lg) 0 var(--spacing-xl);
+    padding: 100px 0 var(--spacing-xl); /* Increased padding to hide under transparent header */
     background-color: var(--color-bg);
     transform: translateY(-150%);
-    transition: transform 0.4s ease-in-out;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     border-bottom: 2px solid rgba(105, 154, 166, 0.1);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
-    z-index: 999;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    z-index: 990; /* Keep it under logo and menu icon in header context */
   }
 
   .nav__list {
@@ -1058,20 +1142,20 @@ section {
   }
 
   /* Reveal menu */
-  .menu-toggle:checked~.nav {
+  .nav.active {
     transform: translateY(0);
   }
 
   /* Hamburger to X animation */
-  .menu-toggle:checked~.menu-icon span:nth-child(1) {
+  .menu-icon.active span:nth-child(1) {
     transform: translateY(9px) rotate(45deg);
   }
 
-  .menu-toggle:checked~.menu-icon span:nth-child(2) {
+  .menu-icon.active span:nth-child(2) {
     opacity: 0;
   }
 
-  .menu-toggle:checked~.menu-icon span:nth-child(3) {
+  .menu-icon.active span:nth-child(3) {
     transform: translateY(-9px) rotate(-45deg);
   }
 
@@ -1121,4 +1205,50 @@ section {
   .btn {
     width: 100%;
   }
+}
+
+/* ==========================================================================
+   DYNAMIC JS STYLES
+   ========================================================================== */
+.header {
+  transition: all 0.3s ease;
+}
+
+.header--scrolled {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(10px);
+}
+
+button.menu-icon {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  z-index: 1002;
+  position: relative;
+}
+
+/* ==========================================================================
+   SCROLL ANIMATIONS (INTERSECTION OBSERVER)
+   ========================================================================== */
+.reveal-hidden {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease-out, transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Optional scale-up reveal for packaging image */
+.packaging__image-wrapper.reveal-hidden {
+  transform: scale(0.9) translateY(40px);
+}
+.packaging__image-wrapper.reveal-visible {
+  transform: scale(1) translateY(0);
 }
