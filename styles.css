@@ -415,40 +415,39 @@ section {
 
 /* Cuadrados dinámicos de colores para los productos */
 .product-card__visual {
-  width: 140px;
-  height: 140px;
-  border-radius: 20px; /* Igual a los personajes: cuadrado con bordes redondeados */
-  margin: 0 auto var(--spacing-lg);
+  width: 100%;
+  height: 250px;
+  margin: 0 auto var(--spacing-md);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 3rem;
   transition: transform 0.4s ease;
-  overflow: hidden;
+}
+
+.product-card__visual img {
+  max-height: 100%;
+  width: auto;
+  object-fit: contain;
 }
 
 .product-card:hover .product-card__visual {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .product-card--chocolate .product-card__visual {
-  background-color: #e5d5c5;
-  color: #4a3b32;
+  background-color: transparent;
 }
 
 .product-card--fresa .product-card__visual {
-  background-color: #fce4ec;
-  color: #d8435d;
+  background-color: transparent;
 }
 
 .product-card--kiwi .product-card__visual {
-  background-color: #e8f5e9;
-  color: #4caf50;
+  background-color: transparent;
 }
 
 .product-card--arandanos .product-card__visual {
-  background-color: #e8eaf6;
-  color: #3f51b5;
+  background-color: transparent;
 }
 
 .product-card__title {
@@ -1010,14 +1009,12 @@ section {
 }
 
 .product-detail__image {
-  background-color: #e5d5c5;
-  /* Default chocolate */
+  background-color: transparent;
+  width: 100%;
   height: 500px;
-  border-radius: var(--border-radius-card);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 5rem;
 }
 
 .product-detail__info h1 {
