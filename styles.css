@@ -280,7 +280,7 @@ section {
 }
 
 .hero__quote {
-  color: #F8E8B3;
+  color: var(--color-white);
   font-size: clamp(2.5rem, 5vw, 3.5rem);
   font-weight: 800;
   line-height: 1.25;
