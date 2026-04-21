@@ -85,7 +85,7 @@ h4,
 .font-bold {
   font-weight: 800;
   line-height: 1.2;
-  color: #7296A2;
+  color: #7296a2;
 }
 
 h1 {
@@ -280,7 +280,7 @@ section {
 }
 
 .hero__quote {
-  color: #F8F2E0;
+  color: #f8f2e0;
   font-size: clamp(2.5rem, 5vw, 3.5rem);
   font-weight: 800;
   line-height: 1.25;
@@ -288,7 +288,7 @@ section {
 }
 
 .btn--white {
-  background-color: #F8F2E0;
+  background-color: #f8f2e0;
   color: var(--color-primary);
   font-weight: 800;
 }
@@ -320,7 +320,7 @@ section {
 }
 
 .hero__statement-title {
-  color: #7296A2;
+  color: #7296a2;
   margin-bottom: var(--spacing-xl);
 }
 
@@ -519,7 +519,7 @@ section {
 }
 
 .character-card__title {
-  color: #7296A2;
+  color: #7296a2;
   font-size: 1.4rem;
   margin-bottom: var(--spacing-sm);
 }
@@ -623,7 +623,7 @@ section {
   font-weight: 700;
   font-size: 1.1rem;
   margin: 0;
-  color: #7296A2;
+  color: #7296a2;
 }
 
 /* ==========================================================================
@@ -784,7 +784,9 @@ section {
   height: 100%;
   position: relative;
   overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
   z-index: 1;
 }
@@ -792,8 +794,11 @@ section {
 .card-type::after {
   content: "";
   position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background-image: url('src/REPITE INSTRUCCIONES.png');
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("src/REPITE INSTRUCCIONES.png");
   background-size: cover;
   background-position: center;
   opacity: 0.85;
@@ -857,7 +862,7 @@ section {
 
 .game__digital p,
 .game__digital h3 {
-  color: #F8E8B3;
+  color: #f8e8b3;
 }
 
 .game__important-note {
@@ -933,7 +938,7 @@ section {
 
 .footer__heading {
   font-size: 1.2rem;
-  color: #F8E8B3;
+  color: #f8e8b3;
   margin-bottom: var(--spacing-md);
   font-weight: 700;
 }
@@ -1016,7 +1021,7 @@ section {
 
 .product-detail__flavor {
   font-size: 1.25rem;
-  color: #7296A2;
+  color: #7296a2;
   font-weight: 700;
   margin-bottom: var(--spacing-lg);
 }
@@ -1033,7 +1038,7 @@ section {
 
 .info-block h3 {
   font-size: 1.1rem;
-  color: #7296A2;
+  color: #7296a2;
   margin-bottom: 8px;
 }
 
