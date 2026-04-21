@@ -195,7 +195,6 @@ section {
   position: relative;
 }
 
-
 .menu-icon {
   display: none;
   cursor: pointer;
@@ -414,17 +413,18 @@ section {
   border-color: rgba(105, 154, 166, 0.3);
 }
 
-/* Círculos dinámicos de colores para los productos */
+/* Cuadrados dinámicos de colores para los productos */
 .product-card__visual {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
+  width: 140px;
+  height: 140px;
+  border-radius: 20px; /* Igual a los personajes: cuadrado con bordes redondeados */
   margin: 0 auto var(--spacing-lg);
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 3rem;
   transition: transform 0.4s ease;
+  overflow: hidden;
 }
 
 .product-card:hover .product-card__visual {
@@ -507,34 +507,16 @@ section {
 .character-card__visual {
   width: 140px;
   height: 140px;
-  border-radius: 20px; /* Cuadrado con bordes redondeados */
   margin: 0 auto var(--spacing-lg);
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
 }
 
 .character-card__visual img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-}
-
-.character-card--luma .character-card__visual {
-  background-color: #fce4ec;
-}
-
-.character-card--mia .character-card__visual {
-  background-color: #fff3e0;
-}
-
-.character-card--nela .character-card__visual {
-  background-color: #fff8e1;
-}
-
-.character-card--rio .character-card__visual {
-  background-color: #e3f2fd;
+  object-fit: contain;
 }
 
 .character-card__title {
@@ -1237,7 +1219,9 @@ button.menu-icon {
 .reveal-hidden {
   opacity: 0;
   transform: translateY(40px);
-  transition: opacity 0.8s ease-out, transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+  transition:
+    opacity 0.8s ease-out,
+    transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 .reveal-visible {
@@ -1251,4 +1235,60 @@ button.menu-icon {
 }
 .packaging__image-wrapper.reveal-visible {
   transform: scale(1) translateY(0);
+}
+
+/* ==========================================================================
+   MICRO-INTERACCTIONS & ANIMATIONS
+   ========================================================================== */
+
+/* 1. Levitation Effect (Hero Illustration) */
+@keyframes floatY {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-18px);
+  }
+}
+.hero__illustration {
+  animation: floatY 5s ease-in-out infinite;
+}
+
+/* 2. Playful Wiggle/Tilt on Characters (Hover) */
+.character-card__visual img {
+  transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.character-card:hover .character-card__visual img {
+  transform: scale(1.15) rotate(6deg);
+}
+.character-card:nth-child(even):hover .character-card__visual img {
+  transform: scale(1.15) rotate(-6deg);
+}
+
+/* 3. Pulse Effect (Buttons) */
+@keyframes heartPulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+  }
+  50% {
+    transform: scale(1.02);
+    box-shadow: 0 0 0 15px rgba(255, 255, 255, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
+
+.hero__banner .btn--white {
+  /* Applying pulse only to the main call-to-action button to avoid overwhelming */
+  animation: heartPulse 2.5s infinite running;
+}
+.hero__banner .btn--white:hover {
+  /* Stop pulsing and go to default hover */
+  animation-play-state: paused;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
