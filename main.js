@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Select elements we want to animate on scroll
   const revealElements = document.querySelectorAll(
-    ".hero__icon-item, .hero__statement-text, .about__visual, .about__info > p, .about__context-box, .focus-item, .products__intro, .product-card, .packaging__image-wrapper, .packaging__content > *, .characters__intro, .character-card, .game__intro, .game__rules-box, .card-type, .game__digital, .product-detail__image, .product-detail__info > h1, .product-detail__flavor, .info-block, .product-detail__actions",
+    ".hero__icon-item, .hero__statement-text, .about__visual, .about__info > p, .about__context-box, .focus-item, .products__intro, .product-card, .packaging__title-mobile, .packaging__image-wrapper, .packaging__content > *, .characters__intro, .character-card, .game__intro, .game__rules-box, .card-type, .game__digital, .product-detail__image, .product-detail__info > h1, .product-detail__flavor, .info-block, .product-detail__actions",
   );
 
   revealElements.forEach((el) => {
