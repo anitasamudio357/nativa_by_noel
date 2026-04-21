@@ -790,6 +790,41 @@ section {
   align-items: center;
   justify-content: center;
   height: 100%;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  z-index: 1;
+}
+
+.card-type::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: url('src/REPITE INSTRUCCIONES.png');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.85;
+  mix-blend-mode: multiply;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.card-type:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.card-type__icon {
+  width: 64px;
+  height: auto;
+  margin-bottom: var(--spacing-sm);
+  transition: transform 0.3s ease;
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.05));
+}
+
+.card-type:hover .card-type__icon {
+  transform: scale(1.1);
 }
 
 .card-type h4 {
