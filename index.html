@@ -382,17 +382,17 @@
           </div>
         </div>
 
-        <div class="game__digital">
-          <div class="game__digital-content">
+        <div class="game__digital" style="display: flex; flex-direction: column; gap: 2rem;">
+          <div class="game__digital-content" style="max-width: 100%;">
             <h3>Cartas Digitales</h3>
             <p>
               Las cartas no están impresas físicamente. Se accede a ellas
-              mediante un código QR presente en el empaque o el kit. Esto
-              permite mantener el tablero limpio, reducir el uso de papel y
+              a través del siguiente tablero interactivo. Esto permite mantener
+              el tablero limpio, reducir el uso de papel y
               ampliar la experiencia digital.
             </p>
 
-            <div class="game__important-note">
+            <div class="game__important-note" style="border-radius: 12px;">
               <p>
                 Nota importante: Las cartas digitales solo muestran la
                 información. No requieren interacción compleja. El juego ocurre
@@ -400,21 +400,11 @@
               </p>
             </div>
           </div>
-          <div class="qr-placeholder">
-            <div class="qr-dots">
-              <span></span><span></span><span></span> <span></span><span></span
-              ><span></span> <span></span><span></span><span></span>
+          
+          <div class="iframe-container" style="width: 100%; border-radius: 16px; overflow: hidden; box-shadow: 0 15px 35px rgba(0,0,0,0.2);">
+            <div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;">
+              <iframe title="Cartas del Juego" frameborder="0" width="1200" height="675" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genially.com/69de9cc9aeb3026b1b7ba3b0" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe>
             </div>
-            <p
-              style="
-                color: var(--color-primary);
-                font-size: 0.8rem;
-                font-weight: 800;
-                margin: 0;
-              "
-            >
-              ESCANEAR
-            </p>
           </div>
         </div>
       </div>
